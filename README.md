@@ -1,15 +1,18 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![Cloud Honeynet / SOC](https://i.imgur.com/ZWxe03e.jpg)
+
+![Azure](https://user-images.githubusercontent.com/130959114/232627898-afc073e9-d20c-4d2f-982c-ad01773fb2c5.jpg)
+
 
 ## Introduction
 
-In this project, I build a mini honeynet in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, apply some security controls to harden the environment, measure metrics for another 24 hours, then show the results below. The metrics we will show are:
+In this project, I designed and implemented a mini honeynet infrastructure on the Azure platform, incorporating various log sources from different resources into a Log Analytics workspace. The resulting data was utilized by Microsoft Sentinel to construct attack maps, generate alerts, and create incidents. To evaluate the effectiveness of the implemented security measures, I collected security metrics in an unsecured environment for a duration of 24 hours. I then implemented specific security controls to harden the environment and measured the security metrics for an additional 24 hours. The security metrics examined included 
 
-- SecurityEvent (Windows Event Logs)
-- Syslog (Linux Event Logs)
-- SecurityAlert (Log Analytics Alerts Triggered)
-- SecurityIncident (Incidents created by Sentinel)
-- AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
+SecurityEvent (Windows Event Logs), 
+Syslog (Linux Event Logs), 
+SecurityAlert (Log Analytics Alerts Triggered), 
+SecurityIncident (Incidents created by Sentinel),
+AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet). 
+The results of this analysis are presented below.
 
 ## Architecture Before Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
