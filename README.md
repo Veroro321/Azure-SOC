@@ -1,17 +1,25 @@
-# Building a SOC + Honeynet in Azure (Live Traffic)
-
-![Azure](https://user-images.githubusercontent.com/130959114/232627898-afc073e9-d20c-4d2f-982c-ad01773fb2c5.jpg)
-
+# Building a SOC + Honeynet in Azure
 
 ## Introduction
 
-In this project, I designed and implemented a mini honeynet infrastructure on the Azure platform, incorporating various log sources from different resources into a Log Analytics workspace. The resulting data was utilized by Microsoft Sentinel to construct attack maps, generate alerts, and create incidents. To evaluate the effectiveness of the implemented security measures, I collected security metrics in an unsecured environment for a duration of 24 hours. I then implemented specific security controls to harden the environment and measured the security metrics for an additional 24 hours. The security metrics examined included 
+In this project, I designed and implemented a mini honeynet infrastructure on the Azure platform, incorporating various log sources from different resources into a Log Analytics workspace. The resulting data was utilized by Microsoft Sentinel to construct attack maps, generate alerts, and create incidents. To evaluate the effectiveness of the implemented security measures, I collected security metrics in an unsecured environment for a duration of 24 hours. I then implemented specific security controls to harden the environment and measured the security metrics for an additional 24 hours. 
 
-SecurityEvent (Windows Event Logs), 
-Syslog (Linux Event Logs), 
-SecurityAlert (Log Analytics Alerts Triggered), 
-SecurityIncident (Incidents created by Sentinel),
-AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet). 
+## Security Metrics Implemented
+
+<ul>
+  <li>SecurityEvent (Windows Event Logs)</li>
+  <hr>
+  <li>Syslog (Linux Event Logs)</li>
+  <hr>
+  <li>SecurityAlert (Log Analytics Alerts Triggered)</li>
+  <hr>
+  <li>SecurityIncident (Incidents created by Sentinel)</li>
+  <hr>
+  <li>AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)</li>
+</ul>
+
+![Azure](https://user-images.githubusercontent.com/130959114/232627898-afc073e9-d20c-4d2f-982c-ad01773fb2c5.jpg)
+
 The results of this analysis are presented below.
 
 ## Architecture Before Hardening / Security Controls
