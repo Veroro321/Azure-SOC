@@ -4,7 +4,7 @@
 
 In this project, I designed and implemented a mini honeynet infrastructure on the Azure platform, incorporating various log sources from different resources into a Log Analytics workspace. The resulting data was utilized by Microsoft Sentinel to construct attack maps, generate alerts, and create incidents. To evaluate the effectiveness of the implemented security measures, I collected security metrics in an unsecured environment for a duration of 24 hours. I then implemented specific security controls to harden the environment and measured the security metrics for an additional 24 hours. 
 
-## Security Metrics Implemented
+## Security Metrics Gathered
 
 <ul>
   <li>SecurityEvent (Windows Event Logs)</li>
