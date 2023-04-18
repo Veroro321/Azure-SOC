@@ -27,7 +27,8 @@ The results of this analysis are presented below.
 
 
 ## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+![Untitled Diagram drawio](https://user-images.githubusercontent.com/130959114/232681984-6a0555cb-90ca-45d0-8158-caed43232858.png)
+
 
 The architecture of the mini honeynet in Azure consists of the following components:
 
