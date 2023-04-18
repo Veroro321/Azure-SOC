@@ -23,7 +23,8 @@ In this project, I designed and implemented a mini honeynet infrastructure on th
 The results of this analysis are presented below.
 
 ## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
+![Untitled Diagram](https://user-images.githubusercontent.com/130959114/232668012-a8bd76b7-6a87-40e4-9885-8fd182473c11.jpg)
+
 
 ## Architecture After Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
