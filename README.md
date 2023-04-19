@@ -42,12 +42,13 @@ The architecture of the mini honeynet in Azure consists of the following compone
 - Azure Storage Account
 - Microsoft Sentinel
 - 
-For the "AFTER" metrics, Network Security Groups were strengthened via implementing strict access controls that blocked all traffic, except for the one originating from my administrative workstation. Furthermore, all other resources were protected by their built-in firewalls, and Private Endpoints were utilized to secure communications between resources.
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Untitled Diagram drawio (1)](https://user-images.githubusercontent.com/130959114/232943971-1773c3a6-2f64-4f68-a9d6-139ca49c08ae.png)
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+![Bnsg-malicious-allowed-in](https://user-images.githubusercontent.com/130959114/233216943-67edd823-93b7-4a55-8c4a-fd463c5957b3.png)
+
+![Bsyslog-ssh-auth-fail](https://user-images.githubusercontent.com/130959114/233217429-5546009a-2bfc-44aa-942b-18941ea514ff.png)
+
+![Bwindows-rdp-auth-fail](https://user-images.githubusercontent.com/130959114/233217188-2e958b6b-c3ee-472a-abcb-791afe860234.png)
 
 ## Metrics Before Hardening / Security Controls
 
@@ -63,9 +64,12 @@ Stop Time 2023-03-16 17:04:29
 | SecurityIncident         | 348
 | AzureNetworkAnalytics_CL | 843
 
-## Attack Maps Before Hardening / Security Controls
+
+## Attack Maps After Hardening / Security Controls
 
 ```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+
+For the "AFTER" metrics, Network Security Groups were strengthened via implementing strict access controls that blocked all traffic, except for the one originating from my administrative workstation. Furthermore, all other resources were protected by their built-in firewalls, and Private Endpoints were utilized to secure communications between resources.
 
 ## Metrics After Hardening / Security Controls
 
@@ -80,6 +84,7 @@ Stop Time	2023-03-19 15:37
 | SecurityAlert            | 0
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
+
 
 ## Conclusion
 
