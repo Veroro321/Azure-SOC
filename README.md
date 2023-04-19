@@ -53,16 +53,18 @@ The architecture of the mini honeynet in Azure consists of the following compone
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
+Start Time	4/18/2023, 4:15:32 PM
+Stop Time	4/19/2023, 4:15:32 PM
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 19470
-| Syslog                   | 3028
-| SecurityAlert            | 10
-| SecurityIncident         | 348
-| AzureNetworkAnalytics_CL | 843
+| SecurityEvent            | 711
+| Syslog                   | 79
+| SecurityAlert            | 9
+| SecurityIncident         | 161
+| AzureNetworkAnalytics_CL | 48
+
+BEFORE SECURING ENVIRONMENT	
 
 
 ## Attack Maps After Hardening / Security Controls
