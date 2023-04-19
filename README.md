@@ -25,6 +25,8 @@ The results of this analysis are presented below.
 ## Architecture Before Hardening / Security Controls
 ![Untitled Diagram](https://user-images.githubusercontent.com/130959114/232668012-a8bd76b7-6a87-40e4-9885-8fd182473c11.jpg)
 
+For the "BEFORE" metrics, all resources were initially deployed with unrestricted access to the internet. Specifically, the Virtual Machines had both their Network Security Groups and built-in firewalls configured with wide-open settings. Additionally, all other resources were deployed with publicly visible endpoints, rendering the use of Private Endpoints unnecessary.
+
 
 ## Architecture After Hardening / Security Controls
 ![Untitled Diagram drawio](https://user-images.githubusercontent.com/130959114/232681984-6a0555cb-90ca-45d0-8158-caed43232858.png)
@@ -39,9 +41,7 @@ The architecture of the mini honeynet in Azure consists of the following compone
 - Azure Key Vault
 - Azure Storage Account
 - Microsoft Sentinel
-
-For the "BEFORE" metrics, all resources were initially deployed with unrestricted access to the internet. Specifically, the Virtual Machines had both their Network Security Groups and built-in firewalls configured with wide-open settings. Additionally, all other resources were deployed with publicly visible endpoints, rendering the use of Private Endpoints unnecessary.
-
+- 
 For the "AFTER" metrics, Network Security Groups were strengthened via implementing strict access controls that blocked all traffic, except for the one originating from my administrative workstation. Furthermore, all other resources were protected by their built-in firewalls, and Private Endpoints were utilized to secure communications between resources.
 
 ## Attack Maps Before Hardening / Security Controls
