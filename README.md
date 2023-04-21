@@ -41,7 +41,6 @@ The architecture of the mini honeynet in Azure consists of the following compone
 - Azure Key Vault
 - Azure Storage Account
 - Microsoft Sentinel
-- 
 
 ## Attack Maps Before Hardening / Security Controls
 ![Bnsg-malicious-allowed-in](https://user-images.githubusercontent.com/130959114/233216943-67edd823-93b7-4a55-8c4a-fd463c5957b3.png)
@@ -87,6 +86,32 @@ Stop Time	2023-03-19 15:37
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
 
+## Simulated attacks
+
+Simulated attacks were generated via PowerShell scripts or by manually triggering events.
+
+## Utilizing NSIT 800-61 Incident Controls 
+
+![image](https://user-images.githubusercontent.com/130959114/233717915-4cff8ac7-e8ce-45b8-b06c-fcddf7b42cfe.png)
+
+- Step 1: Preparation
+Initiated by ingesting all of the logs into Log Analytics Workspace and Sentinel and configuring alert rules
+
+- Step 2: Detection & Analysis 
+Set Severity, Status, Owner
+View Full Details 
+Observe the Activity Log 
+Observe Entities and Incident Timelines 
+“Investigate” the incident and continue trying to determine the scope
+Inspect the entities and see if there are any related events
+Determine legitimacy of the incident (True Positive, False Positive, etc.)
+If True Positive, continue, if False positive, close it out
+
+- Step 3: Containment, Eradication, and Recovery
+Use the simple Incident Response PlayBook
+
+- Step 4: Document Findings/Info and Close out the Incident in Sentinel
+e.g., Brute Force attack: Upon reviewing the Sentinel dashboard, it was discovered that multiple failed login attempts had been made from a single IP address. Further investigation revealed that targeted user account has a potentially compromised system "windows-vm" due to possible overexposure to the internet.  
 
 ## Conclusion
 
