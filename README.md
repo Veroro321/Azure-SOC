@@ -89,6 +89,11 @@ Stop Time	2023-03-19 15:37
 ## Simulated attacks
 
 Simulated attacks were generated via PowerShell scripts or by manually triggering events.
+* Brute Force Success (Windows)
+* Linux Brute Force Attempt
+* Privilege Escalation
+* Windows Brute Force Success
+* Malware Detection 
 
 ## Utilizing NSIT 800-61 Incident Controls 
 
@@ -109,6 +114,11 @@ If True Positive, continue, if False positive, close it out
 
 - Step 3: Containment, Eradication, and Recovery
 Use the simple Incident Response PlayBook
+Brute Force Success (Windows)
+Linux Brute Force Attempt
+Privilege Escalation 
+Windows Brute Force Success
+Malware Detection 
 
 - Step 4: Document Findings/Info and Close out the Incident in Sentinel
 e.g., Brute Force attack: Upon reviewing the Sentinel dashboard, it was discovered that multiple failed login attempts had been made from a single IP address. Further investigation revealed that targeted user account has a potentially compromised system "windows-vm" due to possible overexposure to the internet.  
